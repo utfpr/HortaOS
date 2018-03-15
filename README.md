@@ -53,7 +53,9 @@ Após realizar o passo anterior, você deverá alterar algumas variáveis. São 
 3. WriteKey
 
 **SSID_WIFI:** é a variável que armazena o nome da rede Wifi que o NodeMCU vai se conectar
+
 **PSWD_WIFI:** é a variável que armazena a senha da rede WIFI
+
 **WriteKey:** Guarda a chave de escrita para o ThingSpeak
 
 Após realizar essas alterações, você poderá enviar o arquivo ```HortaOS.ino``` para o Node MCU. 
