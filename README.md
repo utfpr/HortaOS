@@ -61,6 +61,6 @@ Após realizar o passo anterior, você deverá alterar algumas variáveis. São 
 Após realizar essas alterações, você poderá enviar o arquivo ```HortaOS.ino``` para o Node MCU. 
 
 ## Montagem Final
-Para montagem final, foi feito um molde 3D para impressão, onde colocaremos o nosso projeto dentro.
-![Screenshot](https://raw.githubusercontent.com/WillianRod/Controlador-Autom-tico-Para-Horta-Comunit-ria/master/Caixa%203D.png)
+Para montagem final, foi feito um molde 3D para impressão separados em dois modulos. Sendo um deles para o microcontrolador e o outro para parte onde será instalado o solenóide e o sensor de fluxo.
+![Screenshot](https://raw.githubusercontent.com/WillianRod/HortaOS/master/caixa%20horta.png)
 Para ver/editar o projeto, acesse o modelo no [TinkerCad](https://www.tinkercad.com/things/bN6BkPSU1yL-caixa-horta).
