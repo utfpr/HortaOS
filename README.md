@@ -9,12 +9,16 @@ Para montar este controlador, você vai precisar dos seguintes items:
 4. Sensor de umidade do solo
 5. Sensor de temperatura DS18B20
 6. Módulo Relé 5v
-7. Fonte 12v
-8. Resistor 220Ω
-9. Conta no ThingSpeak
+7. Regulador de tensão L7805CV
+8. Fonte 12v
+9. Resistor 220Ω
+10. 2 Cotovelos de cano 3/4" para mangueira
+12. Luva 3/4" com rosca
+13. Conta no ThingSpeak
+14. Arquivo ```Modelo 3D.obj``` impresso
 
 ## Esquema para montagem
-Para realizar a montagem do controlador, você deverá seguir o esquema abaixo. Caso prefira, o projeto do fritzing também está disponível para download neste repositório.
+Para realizar a montagem do controlador, você deverá seguir o esquema abaixo. Caso prefira, o projeto do Fritzing também está disponível para download neste repositório.
 
 ![Screenshot](https://raw.githubusercontent.com/WillianRod/Controlador-Autom-tico-Para-Horta-Comunit-ria/master/Esquema%20de%20montagem.jpg)
 
@@ -48,9 +52,9 @@ Após alguns minutos as placas da linha ESP8266 já estarão disponíveis na lis
 ## Upload do código
 Após realizar o passo anterior, você deverá alterar algumas variáveis. São elas:
 
-1. SSID_WIFI
-2. PSWD_WIFI
-3. WriteKey
+1. ```SSID_WIFI```
+2. ```PSWD_WIFI```
+3. ```WriteKey```
 
 **SSID_WIFI:** é a variável que armazena o nome da rede Wifi que o NodeMCU vai se conectar
 
@@ -63,3 +67,10 @@ Após realizar essas alterações, você poderá enviar o arquivo ```HortaOS.ino
 ## Montagem Final
 Para montagem final, foi feito um molde 3D para impressão separados em dois modulos. Sendo um deles para o microcontrolador e o outro para parte onde será instalado o solenóide e o sensor de fluxo.
 ![Screenshot](https://raw.githubusercontent.com/WillianRod/HortaOS/master/caixa%20horta.png)
+
+### Alimentação
+Não pe possível alimentar o Node MCU com 12v diretos da fonte, então para isso, utilizamos o ```L7805CV``` para reduzir a alimentação da fonte para 5v.
+
+![Screenshot](https://github.com/utfpr/HortaOS/blob/master/Regulador.png?raw=true)
+
+Com isso, basta ligar os 5v no ```VIN``` do Node MCU e o negativo no ```GROUND```
