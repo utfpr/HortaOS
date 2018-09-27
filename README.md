@@ -20,7 +20,7 @@ Para montar este controlador, você vai precisar dos seguintes items:
 ## Esquema para montagem
 Para realizar a montagem do controlador, você deverá seguir o esquema abaixo. Caso prefira, o projeto do Fritzing também está disponível para download neste repositório.
 
-![Screenshot](https://raw.githubusercontent.com/WillianRod/Controlador-Autom-tico-Para-Horta-Comunit-ria/master/Esquema%20de%20montagem.jpg)
+![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/scheme.jpg)
 
 ## Configuração da IDE do Arduino para o NodeMCU
 Entre na IDE do Arduino e clicar em **Arquivo -> Preferências**:
@@ -66,11 +66,16 @@ Após realizar essas alterações, você poderá enviar o arquivo ```HortaOS.ino
 
 ## Montagem Final
 Para montagem final, foi feito um molde 3D para impressão separados em dois modulos. Sendo um deles para o microcontrolador e o outro para parte onde será instalado o solenóide e o sensor de fluxo.
-![Screenshot](https://raw.githubusercontent.com/WillianRod/HortaOS/master/caixa%20horta.png)
+![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/box.png)
 
 ### Alimentação
 Não pe possível alimentar o Node MCU com 12v diretos da fonte, então para isso, utilizamos o ```L7805CV``` para reduzir a alimentação da fonte para 5v.
 
-![Screenshot](https://github.com/utfpr/HortaOS/blob/master/Regulador.png?raw=true)
+![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/regulator.png)
 
 Com isso, basta ligar os 5v no ```VIN``` do Node MCU e o negativo no ```GROUND```
+
+### Montagem da parte hidraulica
+Para montar esta parte, é necessário dos itens ```2```, ```3```, ```12``` e ```13```. Basta seguir o esquema de montagem da imagem abaixo
+
+![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/diagram.jpg)
