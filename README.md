@@ -1,3 +1,5 @@
+For English, please see README.en file!
+
 # Controlador Automático Para Horta Comunitária
 Controlador automático baseado em um controlador Node MCU que controla a irrigação baseado na umidade do solo que registra os logs de umidade, fluxo de água, e temperatura do solo na plataforma ThingSpeak. Desenvolvido pela Universidade Tecnológica Federal do Paraná, Campus Campo Mourão, sob supervisão do Professor Ivanilton Polato.
 
