@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html style="height: 100%;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="nr-1099.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"199e8a4832","applicationID":"2972453","transactionName":"c11cQBFeWw5TSh9TXlFARkdMQl8NQQ==","queueTime":0,"applicationTime":5,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="4_data/highcharts-3.js"></script>
+  <script src="application-8c3b94ffac988c34634448d5064cf4a0.js"></script>
+    <script type="text/javascript">
+    // user's timezone offset
+    var myOffset = new Date().getTimezoneOffset();
+
+    // converts date format from JSON
+    function getChartDate(d) {
+      // offset in minutes is converted to milliseconds and subtracted so that chart's x-axis is correct
+      return Date.parse(d) - (myOffset * 60000);
+    }
+
+    $(document).on('page:load ready', function() {
+      // blank array for holding chart data
+      var chartData = [];
+      // variable for the local date in milliseconds
+      var localDate;
+      // variable for the last date added to the chart
+      var last_date;
+
+      // get the data with a webservice call
+      $.getJSON('https://thingspeak.com/channels/249563/field/3.json?callback=?&amp;offset=0&amp;results=60', function(data) {
+
+          // if no access
+          if (data == '-1') {
+            $('#chart-container').append('This channel is not public.  To embed charts, the channel must be public or a read key must be specified.');
+          }
+
+          // iterate through each feed
+          $.each(data.feeds, function() {
+            var p = new Highcharts.Point();
+            // set the proper values
+            var v = this.field3;
+            p.x = getChartDate(this.created_at);
+            p.y = parseFloat(v);
+            // add location if possible
+            if (this.location) {
+              p.name = this.location;
+            }
+            // if a numerical value exists add it
+            if (!isNaN(parseInt(v))
+                            ) {
+              chartData.push(p);
+            }
+          });
+
+          // specify the chart options
+          var chartOptions = {
+            chart: {
+              renderTo: 'chart-container',
+              defaultSeriesType: "line",
+              backgroundColor: '#ffffff',
+              events: {
+                load: function() {
+                  //if dynamic and no "timeslice" options are set
+                  //   GAK 02/16/2013 Let's try to add the last "average" slice if params[:average]
+
+                  var url = 'https://thingspeak.com/channels/249563/feed/last.json?callback=?&amp;offset=0&amp;location=true&amp;results=60';
+                  if ("".length > 0) {
+                    url = 'https://thingspeak.com/channels/249563/feed/last_average.json?callback=?&amp;offset=0&amp;location=true&amp;average=&amp;results=60';
+                  } else if ("".length > 0) {
+                    url = 'https://thingspeak.com/channels/249563/feed/last_median.json?callback=?&amp;offset=0&amp;location=true&amp;median=&amp;results=60';
+                  } else if ("".length > 0) {
+                    url = 'https://thingspeak.com/channels/249563/feed/last_sum.json?callback=?&amp;offset=0&amp;location=true&amp;sum=&amp;results=60';
+                  }
+
+                  if ('true' === 'true' && (''.length < 1)) {
+                    // push data every 15 seconds
+                    setInterval(function() {
+                      // get the data with a webservice call if we're just getting the last channel
+                      $.getJSON(url, function(data) {
+                        // if data exists
+                        if (data && data.field3) {
+
+                          var p = new Highcharts.Point();
+                          // set the proper values
+                          var v = data.field3;
+
+                          p.x = getChartDate(data.created_at);
+                          p.y = parseFloat(v);
+                          // add location if possible
+                          if (data.location) {
+                            p.name = data.location;
+                          }
+                          // get the last date if possible
+                          if (dynamicChart.series[0].data.length > 0) {
+                            last_date = dynamicChart.series[0].data[dynamicChart.series[0].data.length - 1].x;
+                          }
+                          var shift = false; //default for shift
+
+                          //if push is requested in parameters
+                          // then if results is and data.length is < results, shift = false
+                          var results = 60;
+
+                          if (results && dynamicChart.series[0].data.length + 1 >= results) {
+                            shift = true;
+                          }
+                          // if a numerical value exists and it is a new date, add it
+                          if (!isNaN(parseInt(v)) && (p.x != last_date)
+                                                        ) {
+                            dynamicChart.series[0].addPoint(p, true, shift);
+                          } else {
+                            dynamicChart.series[0].data[dynamicChart.series[0].data.length - 1].update(p);
+                          }
+                        }
+                      });
+
+                    }, 15000);
+                  }
+                }
+              }
+            },
+            title: {
+              text: ''
+            },
+            plotOptions: {
+              line: {
+                color: '#d62020'
+              },
+              bar: {
+                color: '#d62020'
+              },
+              column: {
+                color: '#d62020'
+              },
+              spline: {
+                color: '#d62020'
+              },
+              series: {
+                marker: {
+                  radius: 3
+                },
+                animation: true,
+                step: false,
+                borderWidth: 0,
+                turboThreshold: 0
+              }
+            },
+            exporting: {
+              enabled: false
+            },
+            tooltip: {
+              // reformat the tooltips so that local times are displayed
+              formatter: function() {
+                var d = new Date(this.x + (myOffset * 60000));
+                var n = (this.point.name === undefined) ? '' : '<br/>' + this.point.name;
+                return this.series.name + ':<b>' + this.y + '</b>' + n + '<br/>' + d.toDateString() + '<br/>' + d.toTimeString().replace(/\(.*\)/, "");
+              }
+            },
+            xAxis: {
+              type: 'datetime',
+              title: {
+                text: 'test'
+              }
+            },
+            yAxis: {
+              title: {
+                text: ''
+              },
+              min: null ,
+              max: null
+            },
+            legend: {
+              enabled: false
+            },
+            series: [{
+              name: data.channel.field3
+            }],
+            credits: {
+              text: 'ThingSpeak.com',
+              href: 'https://thingspeak.com/',
+              style: {
+                color: '#D62020'
+              }
+            }
+          };
+
+          // add the data to the chart
+          chartOptions.series[0].data = chartData;
+
+          // set chart labels here so that decoding occurs properly
+          chartOptions.title.text = data.channel.name;
+          chartOptions.xAxis.title.text = 'Date';
+          chartOptions.yAxis.title.text = data.channel.field3;
+
+          // draw the chart
+          var dynamicChart = new Highcharts.Chart(chartOptions);
+
+          // end getJSON success
+        })
+        // chained to getjson, on error
+        .error(function() {
+          $('#chart-container').html('Invalid Channel.');
+        });
+
+    }); // end document.ready
+    </script>
+</head>
+
+<body style="background-color: #ffffff; height: 100%; margin: 0; padding: 0;">
+  <div id="chart-container" style="width: 425px; height: 225px; display: block; position:absolute; bottom:0; top:0; left:0; right:0; margin: 5px 15px 15px 0; overflow: hidden;" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 425px; height: 225px; text-align: left; line-height: normal; z-index: 0; font-family: &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 12px; left: 0px; top: 0px; touch-action: none;"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="425" height="225"><desc>Created with Highcharts 3.0.8</desc><defs><clipPath id="highcharts-1"><rect fill="none" x="0" y="0" width="367" height="137"></rect></clipPath></defs><rect rx="5" ry="5" fill="#ffffff" x="0" y="0" width="425" height="225"></rect><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 48 110.5 L 415 110.5" stroke="#C0C0C0" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 135.5 179 L 135.5 184" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 251.5 179 L 251.5 184" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 367.5 179 L 367.5 184" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><text x="231.5" y="208" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#4d759e;font-weight:bold;fill:#4d759e;" zIndex="7" text-anchor="middle" transform="translate(0,0)" visibility="visible"><tspan x="231.5">Date</tspan></text><path fill="none" d="M 48 179.5 L 415 179.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><text x="24" y="110.5" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#4d759e;font-weight:bold;fill:#4d759e;" zIndex="7" text-anchor="middle" transform="translate(0,0) rotate(270 24 110.5)" visibility="visible"><tspan x="24">TStatus</tspan></text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(48,42) scale(1 1)" clip-path="url(#highcharts-1)"><path fill="none" d="M 3.5980392156862746 68.4999999999962 L 9.784887947656225 68.4999999999962 L 15.778397656752116 68.4999999999962 L 21.771907365848005 68.4999999999962 L 27.958756097817957 68.4999999999962 L 34.14560482978791 68.4999999999962 L 40.139114538883796 68.4999999999962 L 46.32596327085375 68.4999999999962 L 52.5128120028237 68.4999999999962 L 58.50632171191959 68.4999999999962 L 64.69317044388954 68.4999999999962 L 70.68668015298543 68.4999999999962 L 76.87352888495538 68.4999999999962 L 82.86703859405127 68.4999999999962 L 88.86054830314716 68.4999999999962 L 95.24073605799117 68.4999999999962 L 101.23424576708706 68.4999999999962 L 107.421094499057 68.4999999999962 L 113.4146042081529 68.4999999999962 L 119.4081139172488 68.4999999999962 L 125.7883016720928 68.4999999999962 L 131.97515040406276 68.4999999999962 L 138.1619991360327 68.4999999999962 L 144.1555088451286 68.4999999999962 L 150.5356965999726 68.4999999999962 L 156.52920630906848 68.4999999999962 L 162.71605504103846 68.4999999999962 L 168.9029037730084 68.4999999999962 L 174.8964134821043 68.4999999999962 L 181.08326221407424 68.4999999999962 L 187.07677192317013 68.4999999999962 L 193.07028163226602 68.4999999999962 L 199.25713036423596 68.4999999999962 L 205.25064007333185 68.4999999999962 L 211.24414978242774 68.4999999999962 L 217.4309985143977 68.4999999999962 L 223.42450822349358 68.4999999999962 L 229.61135695546355 68.4999999999962 L 235.60486666455944 68.4999999999962 L 241.59837637365533 68.4999999999962 L 247.78522510562527 68.4999999999962 L 253.77873481472116 68.4999999999962 L 259.9655835466911 68.4999999999962 L 265.959093255787 68.4999999999962 L 271.9526029648829 68.4999999999962 L 278.13945169685286 68.4999999999962 L 284.1329614059487 68.4999999999962 L 290.12647111504464 68.4999999999962 L 296.31331984701455 68.4999999999962 L 302.3068295561105 68.4999999999962 L 308.4936782880804 68.4999999999962 L 314.68052702005036 68.4999999999962 L 320.6740367291463 68.4999999999962 L 326.8608854611162 68.4999999999962 L 332.8543951702121 68.4999999999962 L 339.04124390218203 68.4999999999962 L 345.228092634152 68.4999999999962 L 351.22160234324787 68.4999999999962 L 357.2151120523438 68.4999999999962 L 363.4019607843137 68.4999999999962" stroke="#d62020" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -6.401960784313726 68.4999999999962 L 3.5980392156862746 68.4999999999962 L 9.784887947656225 68.4999999999962 L 15.778397656752116 68.4999999999962 L 21.771907365848005 68.4999999999962 L 27.958756097817957 68.4999999999962 L 34.14560482978791 68.4999999999962 L 40.139114538883796 68.4999999999962 L 46.32596327085375 68.4999999999962 L 52.5128120028237 68.4999999999962 L 58.50632171191959 68.4999999999962 L 64.69317044388954 68.4999999999962 L 70.68668015298543 68.4999999999962 L 76.87352888495538 68.4999999999962 L 82.86703859405127 68.4999999999962 L 88.86054830314716 68.4999999999962 L 95.24073605799117 68.4999999999962 L 101.23424576708706 68.4999999999962 L 107.421094499057 68.4999999999962 L 113.4146042081529 68.4999999999962 L 119.4081139172488 68.4999999999962 L 125.7883016720928 68.4999999999962 L 131.97515040406276 68.4999999999962 L 138.1619991360327 68.4999999999962 L 144.1555088451286 68.4999999999962 L 150.5356965999726 68.4999999999962 L 156.52920630906848 68.4999999999962 L 162.71605504103846 68.4999999999962 L 168.9029037730084 68.4999999999962 L 174.8964134821043 68.4999999999962 L 181.08326221407424 68.4999999999962 L 187.07677192317013 68.4999999999962 L 193.07028163226602 68.4999999999962 L 199.25713036423596 68.4999999999962 L 205.25064007333185 68.4999999999962 L 211.24414978242774 68.4999999999962 L 217.4309985143977 68.4999999999962 L 223.42450822349358 68.4999999999962 L 229.61135695546355 68.4999999999962 L 235.60486666455944 68.4999999999962 L 241.59837637365533 68.4999999999962 L 247.78522510562527 68.4999999999962 L 253.77873481472116 68.4999999999962 L 259.9655835466911 68.4999999999962 L 265.959093255787 68.4999999999962 L 271.9526029648829 68.4999999999962 L 278.13945169685286 68.4999999999962 L 284.1329614059487 68.4999999999962 L 290.12647111504464 68.4999999999962 L 296.31331984701455 68.4999999999962 L 302.3068295561105 68.4999999999962 L 308.4936782880804 68.4999999999962 L 314.68052702005036 68.4999999999962 L 320.6740367291463 68.4999999999962 L 326.8608854611162 68.4999999999962 L 332.8543951702121 68.4999999999962 L 339.04124390218203 68.4999999999962 L 345.228092634152 68.4999999999962 L 351.22160234324787 68.4999999999962 L 357.2151120523438 68.4999999999962 L 363.4019607843137 68.4999999999962 L 373.4019607843137 68.4999999999962" stroke-linejoin="round" visibility="visible" stroke-opacity="0.0001" stroke="rgb(192,192,192)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(48,42) scale(1 1)" clip-path="none" style=""><path fill="#d62020" d="M 357 65.4999999999962 C 360.996 65.4999999999962 360.996 71.4999999999962 357 71.4999999999962 C 353.004 71.4999999999962 353.004 65.4999999999962 357 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 351 65.4999999999962 C 354.996 65.4999999999962 354.996 71.4999999999962 351 71.4999999999962 C 347.004 71.4999999999962 347.004 65.4999999999962 351 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 345 65.4999999999962 C 348.996 65.4999999999962 348.996 71.4999999999962 345 71.4999999999962 C 341.004 71.4999999999962 341.004 65.4999999999962 345 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 339 65.4999999999962 C 342.996 65.4999999999962 342.996 71.4999999999962 339 71.4999999999962 C 335.004 71.4999999999962 335.004 65.4999999999962 339 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 332 65.4999999999962 C 335.996 65.4999999999962 335.996 71.4999999999962 332 71.4999999999962 C 328.004 71.4999999999962 328.004 65.4999999999962 332 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 326 65.4999999999962 C 329.996 65.4999999999962 329.996 71.4999999999962 326 71.4999999999962 C 322.004 71.4999999999962 322.004 65.4999999999962 326 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 320 65.4999999999962 C 323.996 65.4999999999962 323.996 71.4999999999962 320 71.4999999999962 C 316.004 71.4999999999962 316.004 65.4999999999962 320 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 314 65.4999999999962 C 317.996 65.4999999999962 317.996 71.4999999999962 314 71.4999999999962 C 310.004 71.4999999999962 310.004 65.4999999999962 314 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 308 65.4999999999962 C 311.996 65.4999999999962 311.996 71.4999999999962 308 71.4999999999962 C 304.004 71.4999999999962 304.004 65.4999999999962 308 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 302 65.4999999999962 C 305.996 65.4999999999962 305.996 71.4999999999962 302 71.4999999999962 C 298.004 71.4999999999962 298.004 65.4999999999962 302 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 296 65.4999999999962 C 299.996 65.4999999999962 299.996 71.4999999999962 296 71.4999999999962 C 292.004 71.4999999999962 292.004 65.4999999999962 296 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 290 65.4999999999962 C 293.996 65.4999999999962 293.996 71.4999999999962 290 71.4999999999962 C 286.004 71.4999999999962 286.004 65.4999999999962 290 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 284 65.4999999999962 C 287.996 65.4999999999962 287.996 71.4999999999962 284 71.4999999999962 C 280.004 71.4999999999962 280.004 65.4999999999962 284 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 278 65.4999999999962 C 281.996 65.4999999999962 281.996 71.4999999999962 278 71.4999999999962 C 274.004 71.4999999999962 274.004 65.4999999999962 278 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 271 65.4999999999962 C 274.996 65.4999999999962 274.996 71.4999999999962 271 71.4999999999962 C 267.004 71.4999999999962 267.004 65.4999999999962 271 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 265 65.4999999999962 C 268.996 65.4999999999962 268.996 71.4999999999962 265 71.4999999999962 C 261.004 71.4999999999962 261.004 65.4999999999962 265 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 259 65.4999999999962 C 262.996 65.4999999999962 262.996 71.4999999999962 259 71.4999999999962 C 255.004 71.4999999999962 255.004 65.4999999999962 259 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 253 65.4999999999962 C 256.996 65.4999999999962 256.996 71.4999999999962 253 71.4999999999962 C 249.004 71.4999999999962 249.004 65.4999999999962 253 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 247 65.4999999999962 C 250.996 65.4999999999962 250.996 71.4999999999962 247 71.4999999999962 C 243.004 71.4999999999962 243.004 65.4999999999962 247 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 241 65.4999999999962 C 244.996 65.4999999999962 244.996 71.4999999999962 241 71.4999999999962 C 237.004 71.4999999999962 237.004 65.4999999999962 241 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 235 65.4999999999962 C 238.996 65.4999999999962 238.996 71.4999999999962 235 71.4999999999962 C 231.004 71.4999999999962 231.004 65.4999999999962 235 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 229 65.4999999999962 C 232.996 65.4999999999962 232.996 71.4999999999962 229 71.4999999999962 C 225.004 71.4999999999962 225.004 65.4999999999962 229 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 223 65.4999999999962 C 226.996 65.4999999999962 226.996 71.4999999999962 223 71.4999999999962 C 219.004 71.4999999999962 219.004 65.4999999999962 223 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 217 65.4999999999962 C 220.996 65.4999999999962 220.996 71.4999999999962 217 71.4999999999962 C 213.004 71.4999999999962 213.004 65.4999999999962 217 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 211 65.4999999999962 C 214.996 65.4999999999962 214.996 71.4999999999962 211 71.4999999999962 C 207.004 71.4999999999962 207.004 65.4999999999962 211 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 205 65.4999999999962 C 208.996 65.4999999999962 208.996 71.4999999999962 205 71.4999999999962 C 201.004 71.4999999999962 201.004 65.4999999999962 205 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 199 65.4999999999962 C 202.996 65.4999999999962 202.996 71.4999999999962 199 71.4999999999962 C 195.004 71.4999999999962 195.004 65.4999999999962 199 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 193 65.4999999999962 C 196.996 65.4999999999962 196.996 71.4999999999962 193 71.4999999999962 C 189.004 71.4999999999962 189.004 65.4999999999962 193 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 187 65.4999999999962 C 190.996 65.4999999999962 190.996 71.4999999999962 187 71.4999999999962 C 183.004 71.4999999999962 183.004 65.4999999999962 187 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 181 65.4999999999962 C 184.996 65.4999999999962 184.996 71.4999999999962 181 71.4999999999962 C 177.004 71.4999999999962 177.004 65.4999999999962 181 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 174 65.4999999999962 C 177.996 65.4999999999962 177.996 71.4999999999962 174 71.4999999999962 C 170.004 71.4999999999962 170.004 65.4999999999962 174 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 168 65.4999999999962 C 171.996 65.4999999999962 171.996 71.4999999999962 168 71.4999999999962 C 164.004 71.4999999999962 164.004 65.4999999999962 168 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 162 65.4999999999962 C 165.996 65.4999999999962 165.996 71.4999999999962 162 71.4999999999962 C 158.004 71.4999999999962 158.004 65.4999999999962 162 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 156 65.4999999999962 C 159.996 65.4999999999962 159.996 71.4999999999962 156 71.4999999999962 C 152.004 71.4999999999962 152.004 65.4999999999962 156 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 150 65.4999999999962 C 153.996 65.4999999999962 153.996 71.4999999999962 150 71.4999999999962 C 146.004 71.4999999999962 146.004 65.4999999999962 150 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 144 65.4999999999962 C 147.996 65.4999999999962 147.996 71.4999999999962 144 71.4999999999962 C 140.004 71.4999999999962 140.004 65.4999999999962 144 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 138 65.4999999999962 C 141.996 65.4999999999962 141.996 71.4999999999962 138 71.4999999999962 C 134.004 71.4999999999962 134.004 65.4999999999962 138 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 131 65.4999999999962 C 134.996 65.4999999999962 134.996 71.4999999999962 131 71.4999999999962 C 127.004 71.4999999999962 127.004 65.4999999999962 131 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 125 65.4999999999962 C 128.996 65.4999999999962 128.996 71.4999999999962 125 71.4999999999962 C 121.004 71.4999999999962 121.004 65.4999999999962 125 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 119 65.4999999999962 C 122.996 65.4999999999962 122.996 71.4999999999962 119 71.4999999999962 C 115.004 71.4999999999962 115.004 65.4999999999962 119 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 113 65.4999999999962 C 116.996 65.4999999999962 116.996 71.4999999999962 113 71.4999999999962 C 109.004 71.4999999999962 109.004 65.4999999999962 113 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 107 65.4999999999962 C 110.996 65.4999999999962 110.996 71.4999999999962 107 71.4999999999962 C 103.004 71.4999999999962 103.004 65.4999999999962 107 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 101 65.4999999999962 C 104.996 65.4999999999962 104.996 71.4999999999962 101 71.4999999999962 C 97.004 71.4999999999962 97.004 65.4999999999962 101 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 95 65.4999999999962 C 98.996 65.4999999999962 98.996 71.4999999999962 95 71.4999999999962 C 91.004 71.4999999999962 91.004 65.4999999999962 95 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 88 65.4999999999962 C 91.996 65.4999999999962 91.996 71.4999999999962 88 71.4999999999962 C 84.004 71.4999999999962 84.004 65.4999999999962 88 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 82 65.4999999999962 C 85.996 65.4999999999962 85.996 71.4999999999962 82 71.4999999999962 C 78.004 71.4999999999962 78.004 65.4999999999962 82 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 76 65.4999999999962 C 79.996 65.4999999999962 79.996 71.4999999999962 76 71.4999999999962 C 72.004 71.4999999999962 72.004 65.4999999999962 76 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 70 65.4999999999962 C 73.996 65.4999999999962 73.996 71.4999999999962 70 71.4999999999962 C 66.004 71.4999999999962 66.004 65.4999999999962 70 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 64 65.4999999999962 C 67.996 65.4999999999962 67.996 71.4999999999962 64 71.4999999999962 C 60.004 71.4999999999962 60.004 65.4999999999962 64 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 58 65.4999999999962 C 61.996 65.4999999999962 61.996 71.4999999999962 58 71.4999999999962 C 54.004 71.4999999999962 54.004 65.4999999999962 58 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 52 65.4999999999962 C 55.996 65.4999999999962 55.996 71.4999999999962 52 71.4999999999962 C 48.004 71.4999999999962 48.004 65.4999999999962 52 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 46 65.4999999999962 C 49.996 65.4999999999962 49.996 71.4999999999962 46 71.4999999999962 C 42.004 71.4999999999962 42.004 65.4999999999962 46 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 40 65.4999999999962 C 43.996 65.4999999999962 43.996 71.4999999999962 40 71.4999999999962 C 36.004 71.4999999999962 36.004 65.4999999999962 40 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 34 65.4999999999962 C 37.996 65.4999999999962 37.996 71.4999999999962 34 71.4999999999962 C 30.004 71.4999999999962 30.004 65.4999999999962 34 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 27 65.4999999999962 C 30.996 65.4999999999962 30.996 71.4999999999962 27 71.4999999999962 C 23.004 71.4999999999962 23.004 65.4999999999962 27 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 21 65.4999999999962 C 24.996 65.4999999999962 24.996 71.4999999999962 21 71.4999999999962 C 17.004 71.4999999999962 17.004 65.4999999999962 21 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 15 65.4999999999962 C 18.996 65.4999999999962 18.996 71.4999999999962 15 71.4999999999962 C 11.004 71.4999999999962 11.004 65.4999999999962 15 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 9 65.4999999999962 C 12.996 65.4999999999962 12.996 71.4999999999962 9 71.4999999999962 C 5.004 71.4999999999962 5.004 65.4999999999962 9 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 3 65.4999999999962 C 6.996 65.4999999999962 6.996 71.4999999999962 3 71.4999999999962 C -0.996 71.4999999999962 -0.996 65.4999999999962 3 65.4999999999962 Z" visibility="inherit"></path><path fill="#d62020" d="M 363 65.4999999999962 C 366.996 65.4999999999962 366.996 71.4999999999962 363 71.4999999999962 C 359.004 71.4999999999962 359.004 65.4999999999962 363 65.4999999999962 Z"></path></g></g><text x="213" y="25" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:16px;color:#274b6d;fill:#274b6d;" text-anchor="middle" class="highcharts-title" zIndex="4"><tspan x="213">ENS210 @ HTC</tspan></text><g class="highcharts-axis-labels" zIndex="7"><text x="136.08719221165092" y="193" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;line-height:14px;fill:#666;" text-anchor="middle" opacity="1"><tspan x="136.08719221165092">16:20</tspan></text><text x="252.09060593608748" y="193" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;line-height:14px;fill:#666;" text-anchor="middle" opacity="1"><tspan x="252.09060593608748">16:30</tspan></text><text x="368.09401966052405" y="193" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;line-height:14px;fill:#666;" text-anchor="middle" opacity="1"><tspan x="368.09401966052405">16:40</tspan></text></g><g class="highcharts-axis-labels" zIndex="7"><text x="40" y="116.49999999999619" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:11px;color:#666;cursor:default;line-height:14px;fill:#666;" text-anchor="end" opacity="1"><tspan x="40">1</tspan></text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-999)"><rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></rect><rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></rect><rect rx="3" ry="3" fill="none" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></rect><rect rx="3" ry="3" fill="rgb(255,255,255)" x="0.5" y="0.5" width="16" height="16" fill-opacity="0.85"></rect><text x="8" y="21" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:12px;color:#333333;fill:#333333;" zIndex="1"></text></g><text x="415" y="220" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Verdana, Arial, Helvetica, sans-serif;font-size:9px;cursor:pointer;color:#D62020;fill:#D62020;" text-anchor="end" zIndex="8"><tspan x="415">ThingSpeak.com</tspan></text></svg></div></div>
+
+
+
+</body></html>
