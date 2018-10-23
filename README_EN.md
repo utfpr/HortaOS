@@ -1,4 +1,5 @@
 # Automatic Controller For Community Vegetable Garden
+![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/diagram.png)
 
 Automated system using a NodeMCU to control soil moisture and irrigation; it keeps logs of moisture, water flow usage, and soil temperature on the ThingSpeak platform. The system is designed to reuse rainwater from a cistern. Developed by Willian Barbosa Rodrigues, undergraduate student of the Federal Technological University - Paraná, Campus Campo Mourão, under the supervision of Professor Ivanilton Polato.
 
@@ -21,7 +22,7 @@ To assembly this controller you need:
 ## Schematic for mounting
 To install the controller, you should follow use diagram below. The Fritzing project file is also available for download in this repository.
 
-![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/scheme.jpg)
+![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/Scheme.png)
 
 ## Code Upload
 Before upload your code to the NodeMCU, change the values for the following variables in the ```HortaOS.ino``` file:
