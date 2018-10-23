@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HortaOS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main">
+    <div class="hero">
+      <div class="title">
+        <h1>HortaOS</h1>
+        <h3>Controlador automático de irrigação baseado na umidade do solo <br> desevolvido na Universidade Tecnológica Federal do Paraná.</h3>
+        <a href="https://github.com/utfpr/HortaOS" class="btn-primary">Acesse o Github</a>
+      </div>
+      <div class="graphs">
+        <iframe id="graph-iframe" width="420px" height="225px" src="https://thingspeak.com/channels/370192/charts/1?width=420&height=225&title=Monitoramento"></iframe>
+        <select name="graphs" id="graph-selector">
+          <option value="1">Humidade do Solo</option>
+          <option value="2">Temperatura</option>
+          <option value="3">Estado de Irrigação</option>
+          <option value="4">Fluxo da Água</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
