@@ -16,7 +16,7 @@ To assembly this controller you need:
 10. 2 3/4" pipe elbows for hose
 12. 3/4" sleeve with thread
 13. ThingSpeak Account
-14. File `` `3D Model.obj``` printed
+14. File ```3D Model.obj``` printed
 
 ## Schematic for mounting
 To install the controller, you should follow use diagram below. The Fritzing project file is also available for download in this repository.
