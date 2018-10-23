@@ -1,6 +1,8 @@
 For English, please click [HERE](https://github.com/utfpr/HortaOS/blob/master/README_EN.md) or read the README_EN.md file!
 
 # Controlador Automático Para Horta Comunitária
+![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/diagram.png)
+
 Controlador automático baseado em um controlador Node MCU que controla a irrigação baseado na umidade do solo que registra os logs de umidade, fluxo de água, e temperatura do solo na plataforma ThingSpeak. Desenvolvido pela Universidade Tecnológica Federal do Paraná, Campus Campo Mourão, sob supervisão do Professor Ivanilton Polato.
 
 ## Itens Necessários
@@ -22,7 +24,7 @@ Para montar este controlador, você vai precisar dos seguintes items:
 ## Esquema para montagem
 Para realizar a montagem do controlador, você deverá seguir o esquema abaixo. Caso prefira, o projeto do Fritzing também está disponível para download neste repositório.
 
-![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/scheme.jpg)
+![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/Scheme.png)
 
 ## Configuração da IDE do Arduino para o NodeMCU
 Entre na IDE do Arduino e clicar em **Arquivo -> Preferências**:
