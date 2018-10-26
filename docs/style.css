@@ -43,6 +43,13 @@ h3 {
   flex-direction: column;
 }
 
+.center {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: right;
+    padding: 10px;
+}
 .btn-primary {
   padding: 8px;
   display: inline-block;
