@@ -1,4 +1,4 @@
-For English, please click [HERE](https://github.com/utfpr/HortaOS/blob/master/README_EN.md) or read the README_EN.md file!
+# For English, click [HERE](https://github.com/utfpr/HortaOS/blob/master/README_EN.md) or read the README_EN.md file!
 
 # Controlador Automático Para Horta Comunitária
 ![Screenshot](https://raw.githubusercontent.com/utfpr/HortaOS/master/Images/diagram.png)
